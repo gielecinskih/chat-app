@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import "../../assets/colors/colors";
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: $Ural-Music-Night-5-hex;
+  .joinInnerContainer {
+    width: 20%;
+    .heading {
+      color: $Ural-Music-Night-2-hex;
+      font-size: 3em;
+      padding-bottom: 10px;
+      border-bottom: 2px solid white;
+    }
+    input {
+      padding: 15px 20px;
+      width: 100%;
+    }
+    button {
+      color: #fff !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: $Ural-Music-Night-1-hex;
+      padding: 20px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 100%;
+    }
+    button:focus {
+      outline: 0;
+    }
+  }
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    .joinInnerContainer {
+      width: 90%;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 720px) {
+  .joinOuterContainer {
+    .joinInnerContainer {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 721px) and (max-width: 800px) {
+  .joinOuterContainer {
+    .joinInnerContainer {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+  .joinOuterContainer {
+    .joinInnerContainer {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1100px) {
+  .joinOuterContainer {
+    .joinInnerContainer {
+      width: 40%;
+    }
+  }
+}
+
+@media (min-width: 1101px) and (max-width: 1500px) {
+  .joinOuterContainer {
+    .joinInnerContainer {
+      width: 30%;
+    }
+  }
+}
