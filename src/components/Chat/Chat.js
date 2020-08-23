@@ -17,7 +17,6 @@ const Chat = ({ location }) => {
   const ENDPOINT = process.env.REACT_APP_ENDPOINT;
 
   useEffect(() => {
-    console.log(ENDPOINT);
     socket = io(ENDPOINT);
 
     setName(name);
