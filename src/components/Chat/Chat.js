@@ -17,6 +17,7 @@ const Chat = ({ location }) => {
   const ENDPOINT = process.env.REACT_APP_ENDPOINT;
 
   useEffect(() => {
+    const { name, room } = queryString.parse(location.search);
     socket = io(ENDPOINT);
 
     setName(name);
