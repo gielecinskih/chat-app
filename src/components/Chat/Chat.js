@@ -14,10 +14,10 @@ const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = process.env.ENDPOINT;
+  const ENDPOINT = process.env.REACT_APP_ENDPOINT;
 
   useEffect(() => {
-    const { name, room } = queryString.parse(location.search);
+    console.log(ENDPOINT);
     socket = io(ENDPOINT);
 
     setName(name);
